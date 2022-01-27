@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('echo'){
+        stage('lauching NodeJs app'){
             steps {
-                bat "echo coucou"
+                bat "echo lauching NodeJs app"
+                bat "docker compose up"
             }
         }
     }

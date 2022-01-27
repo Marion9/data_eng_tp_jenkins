@@ -4,7 +4,7 @@ pipeline {
         stage('lauching NodeJs app'){
             steps {
                 bat "echo lauching NodeJs app"
-                bat "docker compose up"
+                bat "docker-compose up"
             }
         }
     }
